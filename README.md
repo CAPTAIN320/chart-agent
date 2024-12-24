@@ -61,7 +61,7 @@ To get started on your local machine, follow the steps below:
 4. Start the FastAPI server using `uvicorn`:
 
    ```bash
-   uvicorn app:app --host 0.0.0.0 --port 5000 --reload
+   uvicorn app:app --host 0.0.0.0 --port 5001 --reload
    ```
 
 ### Frontend (React)
