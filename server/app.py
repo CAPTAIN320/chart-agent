@@ -51,6 +51,8 @@ async def get_chart(query: str = None):
 
     query_history.append(query)
 
+    print("result", result)
+
     return JSONResponse(content=result, status_code=200)
 
 
