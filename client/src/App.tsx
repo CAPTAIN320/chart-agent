@@ -32,7 +32,7 @@ function App() {
     setMessages([...messages, userMessage]);
 
     try {
-      const response = await fetch(`http://localhost:5000/generate_chart?query=${query}`);
+      const response = await fetch(`http://localhost:5001/generate_chart?query=${query}`);
       const data = await response.json();
 
       const botMessage = { text: data.response, sender: 'bot', chart: {} };
