@@ -36,11 +36,13 @@ def generate_chart(query, query_history):
         {"role": "user", "content": query},
     ]
 
-    # for hist_query in query_history:
-    #     message_text.append({
-    #         "role": "user",
-    #         "content": hist_query
-    #     })
+    for hist_query in query_history:
+        message_text.append(
+            {
+                "role": "user",
+                "content": hist_query,
+            }
+        )
 
     completion = client.chat.completions.create(
         model=llm_model,
